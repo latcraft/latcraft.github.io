@@ -24,7 +24,6 @@
 					animation: 'pushX',
 					width: '80%',
 					height: '100%',
-					clickToHide: true,
 					html: '<div data-action="navList" data-args="nav"></div>',
 					orientation: 'vertical'
 				},
@@ -41,16 +40,16 @@
 	});
 
 	$(function() {
-		$('a.about').click(function() {
+		$('body').on('click', 'a[href="#about"]', function() {
 			$('body').scrollTo('section.about',{duration:'slow', offsetTop : '50'});					
 		});		
-		$('a.speakership').click(function() {
+		$('body').on('click', 'a[href="#speakership"]', function() {
 			$('body').scrollTo('footer.speakership',{duration:'slow', offsetTop : '50'});					
 		});
-		$('a.sponsorship').click(function() {
+		$('body').on('click', 'a[href="#sponsorship"]', function() {
 			$('body').scrollTo('div.sponsorship',{duration:'slow', offsetTop : '50'});					
 		});		
-		$('a.stayconnected').click(function() {
+		$('body').on('click', 'a[href="#stayconnected"]', function() {
 			$('body').scrollTo('div.stayconnected',{duration:'slow', offsetTop : '50'});					
 		});				
 	});
