@@ -125,6 +125,10 @@
 		background-repeat: no-repeat;
 		background-position: left center;
 	}
+
+	a.backers img {
+		margin-right: 5px;
+	}
 	
 	/* Section/Article */
 	
