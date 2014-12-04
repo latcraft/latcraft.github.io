@@ -44,7 +44,7 @@
 			$('body').scrollTo('section.about',{duration:'slow', offsetTop : '50'});					
 		});		
 		$('body').on('click', 'a[href="#speakership"]', function() {
-			$('body').scrollTo('.speakership',{duration:'slow', offsetTop : '50'});					
+			$('body').scrollTo('footer.speakership',{duration:'slow', offsetTop : '50'});					
 		});
 		$('body').on('click', 'a[href="#slides"]', function() {
 			$('body').scrollTo('#slides',{duration:'slow', offsetTop : '50'});					
