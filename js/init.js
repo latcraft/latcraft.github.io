@@ -43,15 +43,18 @@
 		$('body').on('click', 'a[href="#about"]', function() {
 			$('body').scrollTo('section.about',{duration:'slow', offsetTop : '50'});					
 		});		
-		$('body').on('click', 'a[href="#speakership"]', function() {
-			$('body').scrollTo('.speakership',{duration:'slow', offsetTop : '50'});					
+		$('body').on('click', 'a[href="#speak"]', function() {
+			$('body').scrollTo('.speak',{duration:'slow', offsetTop : '50'});					
 		});
 		$('body').on('click', 'a[href="#slides"]', function() {
 			$('body').scrollTo('#slides',{duration:'slow', offsetTop : '50'});					
 		});		
-		$('body').on('click', 'a[href="#sponsorship"]', function() {
-			$('body').scrollTo('div.sponsorship',{duration:'slow', offsetTop : '50'});					
+		$('body').on('click', 'a[href="#contribute"]', function() {
+			$('body').scrollTo('div.contribute',{duration:'slow', offsetTop : '50'});					
 		});		
+		$('body').on('click', 'a[href="#play"]', function() {
+			$('body').scrollTo('div.play',{duration:'slow', offsetTop : '50'});					
+		});				
 		$('body').on('click', 'a[href="#stayconnected"]', function() {
 			$('body').scrollTo('div.stayconnected',{duration:'slow', offsetTop : '50'});					
 		});				
