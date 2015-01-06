@@ -204,7 +204,362 @@ class: rdd, center, middle
 class: center, middle, cloudopoly
 ![](cloudopoly.png)
 
+---
+class: agenda
+.underlined[
+  # First Cloudopoly Challenge
+]
 
+Create a simple web service that:
+
+  - Searches for 3 given keywords on 3 Amazon book web sites:
+      - **amazon.co.uk**
+      - **amazon.fr**
+      - **amazon.de**
+      
+  - For each keyword returns top book title
+                  
+  - Endpoint template: `http://&lt;ip address&gt;/search=key1+key2+key3`
+  
+  - Expected output:
+      ```
+      [
+        "Brief History of Time",
+        "Clean Coder",
+        "Continuous Delivery"
+      ]
+      ```
+
+---
+class: center, middle
+![](github.png)<br/>
+
+`https://github.com/latcraft/cloudopoly-search`
+     
+---
+class: agenda
+.underlined[
+  # Conditions
+]
+ 
+- Any programming language, any operating system
+
+- Deploy your service to *AWS* *EC2* (free tier)
+
+- Use smallest instance type (`t2.micro`)
+
+- Send us IP address of your service before `06.01.2015 16:00`
+
+- At 17:00 we start the test! 
+
+???
+Conditions are important
+
+---
+class: agenda
+.underlined[
+  # Winning condition
+]
+### .wow[Correct]
+ 
+### .wow[Fast]
+
+### .wow[VERY FAST]
+---
+class: agenda
+.underlined[
+  # Prize
+]
+
+- *Amazon AWS voucher for 150USD*
+
+- Can be used for any AWS service
+
+- Enough money to run a decent web server for a year
+
+???
+
+---
+class: agenda
+.underlined[
+  # Average book rating calculation
+]
+
+Book rating should be calculated using the following formula:
+
+   R = (R<sub>afr</sub> * N<sub>afr</sub> + R<sub>ade</sub> * N<sub>ade</sub> + R<sub>auk</sub> * N<sub>auk</sub>) / (N<sub>afr</sub> + N<sub>ade</sub> + N<sub>auk</sub>)
+
+- R<sub>afr</sub> - average rating on amazon.fr
+- N<sub>afr</sub> - number of ratings on amazon.fr
+- R<sub>ade</sub> - average rating on amazon.de
+- N<sub>ade</sub>  - number of ratings on amazon.de
+- R<sub>auk</sub> - average rating on amazon.co.uk
+- N<sub>auk</sub> - number of ratings on amazon.co.uk
+
+NOTE: Only books with **at least 15 reviews** should be considered for result.
+
+???
+
+---
+class: agenda
+.underlined[
+  # Book title matching
+]
+
+For book title matching on different web sites, consider the following rules: 
+
+- Remove everything that is after colon or semicolon (if any), 
+- and anything that is in the brackets (if any). 
+- If titles have the same rating, then return the one with the biggest number of reviews. 
+- If titles have the same rating and the same number in reviews, then return the one that goes first in alphabetical order. 
+
+---
+class: center, middle, emph
+# .lighten[Solution path]
+???
+
+---
+class: center, middle, emph
+# .lighten[Product Advertising API]
+???
+
+---
+class: agenda
+.underlined[
+  # ItemSearch
+]
+
+- It's a web service
+- Well-documented
+- Specifically designed to handle merchadizer needs
+
+---
+class: center, middle, emph
+# .lighten[Looks promising, right?]
+???
+
+---
+class: agenda
+.underlined[
+  # Reality
+]
+
+- Does not return review rating as a number
+- Review data is just a link to an HTML page 
+- Sorting by review rating is only supported in DE and UK
+
+---
+class: center, middle, emph
+# .lighten[What about ItemLookup service?]
+???
+Potentially we could have combined ItemSearch and ItemLookup calls if they were faster than web page request.
+
+---
+class: agenda
+.underlined[
+  # Sorry...
+]
+
+- Same story, basically 
+- Does not return review rating as a number
+- Review data is just a link to an HTML page 
+
+---
+class: center, middle, emph
+# .lighten[The only way is...]
+???
+
+---
+class: center, middle, emph
+# .lighten[Web Scraping]
+???
+
+---
+class: agenda
+.underlined[
+  # Potential challenges
+]
+
+- Parsing
+- Paging
+- Captcha
+- Caching
+- Deployment
+
+???
+Luckily, all amazon web-sites have the same HTML structure. The only minor issue is number formatting which is locale-specific. 
+Paging links also work in the same way on all amazon web-sites. 
+If you make many requests from the same IP address very often, then you will hit Captcha page to prove you are a human being. Luckily, amazon gives us a solution for that, we can always start a new instance with new IP address in EC2 and continue working.
+We also assume that use caching of amazon requests, 1 reason is to avoid Captcha, another reason is to improve overall performance. 
+
+---
+class: center, middle, emph
+# .lighten[Deployment]
+???
+
+---
+class: agenda
+.underlined[
+  # t2.micro
+]
+
+- Free tier has 750 free hours of t2.micro a month
+- You can start more than 1 at a time
+- Each t2.micro has:
+    - 1 vCPU
+    - 1 GiB of RAM
+    - 6 CPU credits/hour 
+
+???
+
+---
+class: agenda
+.underlined[
+  # CPU credits and bursting
+]
+
+- Baseline performance is 10% of 1 CPU core (2.5GHz)
+- 1 CPU credit = 1 minute of burst
+- Bursting is usage above the baseline performance
+- Credits are saved when resources are under low load
+- Credits are used during bursting
+
+???
+
+Using CPU credits wisely is important to get better peak performance if you know the time of the peak.
+
+---
+class: agenda
+.underlined[
+  # Regions
+]
+
+- ap-northeast-1 Asia Pacific (Tokyo)
+- ap-southeast-1 Asia Pacific (Singapore)
+- ap-southeast-2 Asia Pacific (Sydney)
+- eu-central-1 EU (Frankfurt)
+- eu-west-1 EU (Ireland)
+- sa-east-1 South America (Sao Paulo)
+- us-east-1 US East (N. Virginia)
+- us-west-1 US West (N. California)
+- us-west-2 US West (Oregon)
+
+???
+
+Selecting which region to deploy to is also important factor to save upon response time.
+
+---
+class: agenda
+.underlined[
+  # Test data set
+]
+
+TODO: to be anounced at the last moment
+
+---
+class: center, middle, emph
+# .lighten[And the winner is...]
+???
+
+---
+class: agenda
+.underlined[
+  # And the winner is...
+]
+
+TODO: to be anounced at the last moment
+???
+
+
+---
+class: agenda
+.underlined[
+  # Second Cloudopoly Challenge
+]
+
+Create an image processing web service which:
+
+- Accepts a set of bit.ly identifiers that point to JPG images with 2048 x 1365 resolution.
+- Resolves URIs (`1uCqioJ` resolves to `http://bit.ly/1uCqioJ`) and uploads images to your S3 bucket. Before uploading, [LatCraft logo](logo.png) should be added to the top-right corner of every image (feel free to convert logo to more convenient format if neccessary).
+- Concatenates 10 logo-marked images (in any order) by forming large 2048 x 13650 image.
+- Uploads concatenated image to your S3 instance.
+- Responds with links to 11 uploaded images.
+
+---
+class: agenda
+.underlined[
+  # Second Cloudopoly Challenge
+]
+
+Expected input: 
+
+        http://<ip address>/process?images=1uCqioJ+1sqlimo+1uADAkJ+1BHryP2
+        +13koVon+1uCqTGX+16jnrfk+1wsy1sC+1wN7idN+1uADWb8
+
+Expected JSON response:
+
+```
+[
+   "http://<s3 bucket address>>/1uCqioJ.jpg", 
+   "http://<s3 bucket address>>/1sqlimo.jpg", 
+   ... 7 more links here
+   "http://<s3 bucket address>>/1uADWb8.jpg",    
+   "http://<s3 bucket address>>/concatenated.jpg"       
+]
+```
+
+---
+class: center, middle
+![](github.png)<br/>
+
+`https://github.com/latcraft/cloudopoly-pics`
+     
+---
+class: agenda
+.underlined[
+  # Conditions
+]
+ 
+- Any programming language, any operating system
+- Deploy your service to *AWS* *EC2* (free tier)
+- Use smallest instance type (`t2.micro`)
+- Send IP address of your service before `02.02.2015 18:00` to contest@latcraft.lv
+- On `02.02.2015 20:00` we start the test! 
+
+???
+Conditions are important
+
+---
+class: agenda
+.underlined[
+  # Winning condition
+]
+### .wow[Correct]
+ 
+### .wow[Fast]
+
+### .wow[VERY FAST]
+---
+class: agenda
+.underlined[
+  # Prize
+]
+
+- *Amazon AWS voucher for 150USD*
+
+- Can be used for any AWS service
+
+- Enough money to run a decent web server for a year
+
+???
+
+
+
+---
+class: center, middle, emph
+background-image: url('thankyou.jpg')
+???
+- That's all folks. Thank you very much for your attention!
     </textarea>
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
     </script>
