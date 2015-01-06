@@ -484,41 +484,9 @@ class: agenda
 5. Aivars Kalvans (GitHub coupon)
 
 ---
-class: agenda
-.underlined[
-  # Second Cloudopoly Challenge
-]
-
-Create an image processing web service which:
-
-- Accepts a set of bit.ly identifiers that point to JPG images with 2048 x 1365 resolution.
-- Resolves URIs (`1uCqioJ` resolves to `http://bit.ly/1uCqioJ`) and uploads images to your S3 bucket. Before uploading, [LatCraft logo](logo.png) should be added to the top-right corner of every image (feel free to convert logo to more convenient format if neccessary).
-- Concatenates 10 logo-marked images (in any order) by forming large 2048 x 13650 image.
-- Uploads concatenated image to your S3 instance.
-- Responds with links to 11 uploaded images.
-
----
-class: agenda
-.underlined[
-  # Second Cloudopoly Challenge
-]
-
-Expected input: 
-
-        http://<ip address>/process?images=1uCqioJ+1sqlimo+1uADAkJ+1BHryP2
-        +13koVon+1uCqTGX+16jnrfk+1wsy1sC+1wN7idN+1uADWb8
-
-Expected JSON response:
-
-```
-[
-   "http://<s3 bucket address>>/1uCqioJ.jpg", 
-   "http://<s3 bucket address>>/1sqlimo.jpg", 
-   ... 7 more links here
-   "http://<s3 bucket address>>/1uADWb8.jpg",    
-   "http://<s3 bucket address>>/concatenated.jpg"       
-]
-```
+class: center, middle, emph
+# .lighten[Second Cloudopoly Challenge]
+???
 
 ---
 class: center, middle
@@ -526,47 +494,6 @@ class: center, middle
 
 `https://github.com/latcraft/cloudopoly-pics`
      
----
-class: agenda
-.underlined[
-  # Conditions
-]
- 
-- Any programming language, any operating system
-- Deploy your service to *AWS* *EC2* (free tier)
-- Use smallest instance type (`t2.micro`)
-- Send IP address of your service before `02.02.2015 18:00` to contest@latcraft.lv
-- On `02.02.2015 20:00` we start the test! 
-
-???
-Conditions are important
-
----
-class: agenda
-.underlined[
-  # Winning condition
-]
-### .wow[Correct]
- 
-### .wow[Fast]
-
-### .wow[VERY FAST]
----
-class: agenda
-.underlined[
-  # Prize
-]
-
-- *Amazon AWS voucher for 150USD*
-
-- Can be used for any AWS service
-
-- Enough money to run a decent web server for a year
-
-???
-
-
-
 ---
 class: center, middle, emph
 background-image: url('thankyou.jpg')
