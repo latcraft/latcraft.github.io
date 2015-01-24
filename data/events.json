@@ -1,0 +1,76 @@
+{
+  "events": [
+    {
+       "date": "02.12.2014",
+       "title": "LatCraft 1st Meetup",
+       "type": "community",
+       "subevents": [
+          {
+            "title": "Registration",
+            "startTime": "18:00"
+          },
+          {
+            "title": "Registration",
+            "startTime": "18:00"
+          },
+          {
+            "title": "Registration",
+            "startTime": "18:00"
+          },
+          {
+            "title": "Registration",
+            "startTime": "18:00"
+          }
+
+       ]
+    },
+    {
+       "date": "06.01.2015",
+       "title": "LatCraft 2nd Meetup",
+       "type": "community",
+       "subevents": [
+          {
+            "title": "Registration",
+            "startTime": "18:00"
+          },
+          {
+            "title": "Registration",
+            "startTime": "18:00"
+          },
+          {
+            "title": "Registration",
+            "startTime": "18:00"
+          },
+          {
+            "title": "Registration",
+            "startTime": "18:00"
+          }
+       ]
+    },
+    {
+       "date": "03.02.2015",
+       "title": "LatCraft 3rd Meetup",
+       "type": "community",
+       "subevents": [
+          {
+            "title": "Registration",
+            "startTime": "18:00"
+          },
+          {
+            "title": "Registration",
+            "author": "",
+            "avatar": "",
+            "startTime": "18:00"
+          },
+          {
+            "title": "Coffee break",
+            "startTime": "18:00"
+          },
+          {
+            "title": "Registration",
+            "startTime": "18:00"
+          }
+       ]
+    }
+  ]
+}
