@@ -6,22 +6,21 @@
        "type": "community",
        "subevents": [
           {
-            "title": "Registration",
-            "startTime": "18:00"
+            "title": "Opening",
+            "startTime": "18:30"
           },
           {
-            "title": "Registration",
-            "startTime": "18:00"
+            "title": "How Ask.dm was built",
+            "author": "Valery Vishnyakov",
+            "avatar": "https://raw.githubusercontent.com/latcraft/latcraft.github.io/master/images/speakers/valeryv.png",
+            "startTime": "18:50"
           },
           {
-            "title": "Registration",
-            "startTime": "18:00"
-          },
-          {
-            "title": "Registration",
-            "startTime": "18:00"
+            "title": "Software Architecture Anti-Patterns",
+            "author": "Eduards Sizovs",
+            "avatar": "https://raw.githubusercontent.com/latcraft/latcraft.github.io/master/images/speakers/eduardsi.jpeg",
+            "startTime": "20:00"
           }
-
        ]
     },
     {
@@ -30,21 +29,32 @@
        "type": "community",
        "subevents": [
           {
-            "title": "Registration",
-            "startTime": "18:00"
+            "title": "Opening",
+            "startTime": "18:30"
           },
           {
-            "title": "Registration",
-            "startTime": "18:00"
+            "title": "AWS Cloudopoly",
+            "startTime": "18:40"
           },
           {
-            "title": "Registration",
-            "startTime": "18:00"
+            "title": "Epiphany From a Specialist as Worst CIO Ever",
+            "author": "Maris Veide",
+            "avatar": "https://raw.githubusercontent.com/latcraft/latcraft.github.io/master/images/speakers/mariveid.jpg",
+            "startTime": "18:50"
           },
           {
-            "title": "Registration",
-            "startTime": "18:00"
+            "title": "Building Technical Competence",
+            "author": "Raimonds Simanovskis",
+            "avatar": "https://raw.githubusercontent.com/latcraft/latcraft.github.io/master/images/speakers/rsim.jpg",
+            "startTime": "19:50"
+          },
+          {
+            "title": "Game of Throneware",
+            "author": "Jakub Nabrdalik",
+            "avatar": "https://raw.githubusercontent.com/latcraft/latcraft.github.io/master/images/speakers/jakubn.jpg",
+            "startTime": "20:50"
           }
+
        ]
     },
     {
@@ -53,22 +63,26 @@
        "type": "community",
        "subevents": [
           {
-            "title": "Registration",
-            "startTime": "18:00"
+            "title": "Opening & Cloudopoly",
+            "startTime": "18:30"
           },
           {
-            "title": "Registration",
-            "author": "",
-            "avatar": "",
-            "startTime": "18:00"
+            "title": "Growing Teams: Notes of an Amateur Team Gardener",
+            "author": "Andrey Grave",
+            "avatar": "https://raw.githubusercontent.com/latcraft/latcraft.github.io/master/images/speakers/grave.jpg",
+            "startTime": "18:45"
           },
           {
-            "title": "Coffee break",
-            "startTime": "18:00"
+            "title": "From Zero to Hero",
+            "author": "Romans Karpelcevs",
+            "avatar": "https://raw.githubusercontent.com/latcraft/latcraft.github.io/master/images/speakers/roma.png",
+            "startTime": "19:45"
           },
           {
-            "title": "Registration",
-            "startTime": "18:00"
+            "title": "A Personal Journey Into Human and Team Effectiveness",
+            "author": "Aleksejs Truhans",
+            "avatar": "https://raw.githubusercontent.com/latcraft/latcraft.github.io/master/images/speakers/truhans.jpg",
+            "startTime": "20:45"
           }
        ]
     }
