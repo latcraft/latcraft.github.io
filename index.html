@@ -13,9 +13,9 @@
   <body>
     <section id="modal">
       <div class="holder">
-        <div class="container">
+        <div class="container"><a href="#close" class="close"> <span></span><span></span></a>
           <div class="eventbrite">
-            <iframe src="http://www.eventbrite.com/tickets-external?eid=15802826680&amp;ref=etckt&amp;v=2" frameborder="0" height="256" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+            <iframe src="http://www.eventbrite.com/tickets-external?eid=16021570950&amp;ref=etckt&amp;v=2" frameborder="0" height="256" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
           </div>
         </div>
       </div>
@@ -24,9 +24,10 @@
       <div class="container">
         <ul> 
           <li><a href="#events">events</a></li>
-          <li><a href="#sponsors">sponsors</a></li>
-          <li><a href="#sharing">stream</a></li>
+          <li><a href="#sponsors">sponsors			</a></li>
           <li><a href="#challenge">challenge</a></li>
+          <li><a href="#learn">learn</a></li>
+          <li><a href="#sharing">stream</a></li>
           <li><a href="#digest">digest</a></li>
           <li><a href="#map">venue</a></li>
           <li><a href="#contact">contact</a></li>
@@ -53,62 +54,84 @@
           <div class="info">
             <h1>We are about IT professionals and spectacular speeches.</h1>
             <p>We are community of awesome Latvian software craftsmen. Each month we host an event where we invite amazing speakers from across the world.</p>
-            <div class="button-group"><a id="join-event" href="#events" class="button big inactive">join us on<span>3rd of march</span></a></div>
+            <div class="button-group"><a id="join-event" href="#events" class="button big scroll-button amazon">join us on<span>9th of april</span></a></div>
           </div>
         </div>
       </div>
     </header>
     <section id="events">
-      <div class="container">
-        <h2 class="title">Events</h2>
-        <div class="carousel">
-          <div class="holder">
-            <div class="slide">
-              <div class="description"> 
-                <h3>CIO and CTO lessons learned</h3>
-                <p>Learn what does it mean to lead the way and what true leaders expect from their peers. Come over to hear deep insights from guys that went long path towards becoming Chiefs.</p>
+      <h2 class="title">Events</h2>
+      <div class="carousel">
+        <div class="holder">
+          <div class="slide">
+            <div class="container">
+              <div class="group amazon">
+                <div class="description"> 
+                  <h3>AWS Day by LatCraft</h3>
+                  <p>Amazon Web Services is the best cloud platform available on the market. LatCraft is probably the most visited IT user group in the country. Experts from Luxembourg, United Kingdom, Czech Republic and Latvia are gathering in Riga in order to share their knowledge, success recipes and war stories with you. 5 amazing speakers. Spectacular talks. Rocking AWS. </p>
+                </div>
+                <div class="bubble"><img src="img/amazon.png" alt="" class="logo"/>
+                  <ul>
+                    <li> <strong>date:</strong>9th of April, 2015</li>
+                    <li> <strong>time:</strong>16:00 - 21:00</li>
+                    <li> <strong>venue: </strong><a href="#map" class="scroll-button">Maskavas 4, Spikeri facilities, entrance via Café Dali</a></li>
+                  </ul><a id="reserve-seat" class="button big">book a seat</a>
+                </div>
               </div>
-              <div class="bubble">
-                <ul>
-                  <li> <strong>date:</strong>6 January, 2015</li>
-                  <li> <strong>time:</strong>18:30</li>
-                </ul>
-              </div>
-              <ul class="speakers">
+              <ul class="speakers amazon">
                 <li>
                   <div class="title-holder">
-                    <h3>Epiphany From A Specialist As Worst CIO Ever</h3>
+                    <h3>Lean in the Cloud</h3>
                   </div>
-                  <div class="author"><img src="img/speakers/maris-veiders.jpg" alt=""/>
-                    <h5>Māris Veide</h5><span>CIO at E-Global Holding</span>
+                  <div class="author"><img src="img/speakers/elwin.png" alt=""/>
+                    <h5>Martin Elwin</h5><span>Solution Architect at AWS</span>
                   </div>
-                  <p>Maris will share his empirical findings from two very distinct perspectives of IT Specialist and CIO - how kicking some ice is related to to literally breaking speed limits while going to work, which [just as a side effect] - leads to earning a lot more money too.</p>
-                  <div class="button-group"><a href="https://speakerdeck.com/latcraft/epiphany-from-a-specialist-as-worst-cio-ever" target="_blank" class="button effect"> 
-                      <div data-hover="view slides">view slides</div></a><a href="https://www.youtube.com/watch?v=CeVR2q8O9gU" target="_blank" class="button icon"><i class="fa fa-play-circle"></i></a>
+                  <p>Improve, validate, iterate. Current development practices promote avoiding waste - a challenging task, especially in a traditional infrastructure. With programmatic control over your environment Amazon Web Services lets you optimize the infrastructure as needed and treat it as another versionable aspect of your application. In this session we'll look at how both start-ups and enterprises use AWS to increase their rate of innovation and continuously deliver new functionality to users in a cost efficient way.</p>
+                  <div class="button-group">
                   </div>
                 </li>
                 <li>
                   <div class="title-holder">
-                    <h3>Building Technical Competence</h3>
+                    <h3>Building scalable cluster with AWS, CoreOS and Mesos</h3>
                   </div>
-                  <div class="author"><img src="img/speakers/raimonds-simanovskis.jpg" alt=""/>
-                    <h5>Raimonds Simanovskis</h5><span>Founder at eazyBi</span>
+                  <div class="author"><img src="img/speakers/veverkaj.png" alt=""/>
+                    <h5>Jakub Veverka</h5><span>Sys. Engineer at 4Finance</span>
                   </div>
-                  <p>Raimonds has been CTO for large software development company and now is CEO/CTO of a small startup. He will talk about several topics and compare from his experience what has been common and what different in large and small teams.</p>
-                  <div class="button-group"><a href="https://speakerdeck.com/latcraft/building-technical-competence" target="_blank" class="button effect"> 
-                      <div data-hover="view slides">view slides</div></a><a href="https://www.youtube.com/watch?v=gsdJ5kgKdco" target="_blank" class="button icon"><i class="fa fa-play-circle"></i></a>
+                  <p>Do you believe it’s possible to quickly build a cluster that allows you to work with a datacenter like it’s a single pool of resources? In this practical session Jakub will show how to build scalable, fault-tolerant cluster from scratch with minimal effort and maximal gain.</p>
+                  <div class="button-group">
                   </div>
                 </li>
                 <li>
                   <div class="title-holder">
-                    <h3>Game Of Throneware</h3>
+                    <h3>AWS: the good, the bad, the ugly, and the use case</h3>
                   </div>
-                  <div class="author"><img src="img/speakers/jakub-nabrdalik.jpg" alt=""/>
-                    <h5>Jakub Nabrdalik</h5><span>IT Manager at 4finance</span>
+                  <div class="author"><img src="img/speakers/pavluchenkov.png" alt=""/>
+                    <h5>Juris Pavlyuchenkov</h5><span>Sys. Admin at Ask.fm</span>
                   </div>
-                  <p>Jakub will reveal how not to get killed when a developer becomes a manager. What happens, when you become a manager? How do you organize teams, workspace? How do you help people? How do you deal with politics, communication? And much more.</p>
-                  <div class="button-group"><a href="https://speakerdeck.com/latcraft/game-of-throneware" target="_blank" class="button effect"> 
-                      <div data-hover="view slides">view slides</div></a><a href="https://www.youtube.com/watch?v=gsdJ5kgKdco" target="_blank" class="button icon"><i class="fa fa-play-circle"></i></a>
+                  <p>Everyone keeps telling about how AWeSome Amazon Web Services are. How they are all about elasticity, simplicity and scalability. But we all know that nothing is perfect in this world, except Chuck Norris. So what about the dark side? The talk will be about some nice tricks you can do with AWS, some things you can not do with AWS, and some things you can do, but with tears, pain and swearing.</p>
+                  <div class="button-group">
+                  </div>
+                </li>
+                <li>
+                  <div class="title-holder">
+                    <h3>Docker at Scale</h3>
+                  </div>
+                  <div class="author"><img src="img/speakers/johan.png" alt=""/>
+                    <h5>Johan Waernulf</h5><span>Solution Architect at AWS</span>
+                  </div>
+                  <p>Developers are always looking for ways of improving their efficiency. Over the last years container technology has become an increasingly popular way of managing application packaging and deployments, however handling many containers running on many machines has its own set of challenges. The recently announced Amazon EC2 Container Service aims to simplify the management of running containers in a cluster of EC2 instances. In this session the initial feature set of the service will be introduced we'll go through a demo of common operations.</p>
+                  <div class="button-group">
+                  </div>
+                </li>
+                <li>
+                  <div class="title-holder">
+                    <h3>Big Data or Big Marketing</h3>
+                  </div>
+                  <div class="author"><img src="img/speakers/ilkka.png" alt=""/>
+                    <h5>Ilkka Turunen</h5><span>BigData Guy at Cloudreach</span>
+                  </div>
+                  <p>We’ve all heard Big Data pouring out of the press over the last years and frankly, are probably all sick of it. The term is probably one of the most successful buzzwords of our industry to date. Why is that? This session will aim to shine a light on the enigma by introducing example use cases we’ve worked with our clients. We’ll walk through the AWS toolset for Data Management and introduce concrete architectures and the good, the bad, and the ugly sides of them. This isn’t your mother’s MySQL sharding...</p>
+                  <div class="button-group">
                   </div>
                 </li>
               </ul>
@@ -116,16 +139,77 @@
                 <ul></ul>
               </div>
             </div>
-            <div class="slide">
-              <div class="description"> 
-                <h3>Team and Personal Effectiveness</h3>
-                <p>We'd love to spend 24/7 in code, but software development is all about people. We will talk about teams, people, what makes them tick and what should you do to become a great team player.</p>
+          </div>
+          <div class="slide">
+            <div class="container">
+              <div class="group">
+                <div class="description"> 
+                  <h3>Programming Languages You Should Know About</h3>
+                  <p>There are cool programming languages available that are not yet mainstream, but deserves significant attention. Come over and learn more about sharp programming languages such as Rust, Golang and Erlang.</p>
+                </div>
+                <div class="bubble">
+                  <ul>
+                    <li> <strong>date:</strong>3 March, 2015</li>
+                    <li> <strong>time:</strong>18:30</li>
+                  </ul>
+                </div>
               </div>
-              <div class="bubble">
-                <ul>
-                  <li> <strong>date:</strong>3 February, 2015</li>
-                  <li> <strong>time:</strong>18:30</li>
-                </ul>
+              <ul class="speakers">
+                <li>
+                  <div class="title-holder">
+                    <h3>The Sweet Flavour of Rust</h3>
+                  </div>
+                  <div class="author"><img src="img/speakers/maslov.png" alt=""/>
+                    <h5>Leonids Maslovs</h5><span>Galeo Consulting</span>
+                  </div>
+                  <p>Every chef now and then uses pinch of his secret spices to make a dish somewhat special and exquisite. This talk will provide introduction into nature of Rust sweetness and will answer to most important questions: Why and When does it make our dishes better? We will iterate over small code snippets and take a look How strong typing and functional thinking can be applied to low level system programming.</p>
+                  <div class="button-group"><a href="https://speakerdeck.com/latcraft/the-sweet-flavour-of-rust" target="_blank" class="button effect"> 
+                      <div data-hover="view slides">view slides</div></a>
+                  </div>
+                </li>
+                <li>
+                  <div class="title-holder">
+                    <h3>The Way to Go</h3>
+                  </div>
+                  <div class="author"><img src="img/speakers/ressin.png" alt=""/>
+                    <h5>Anatoly Ressin</h5><span>C.T.Co</span>
+                  </div>
+                  <p>This talk will guide you through the core concepts of the Go. We will cover the type system, memory model, packaging and of course the famous concurrency primitives of the language: goroutines and channels. Small working code snippets will be available on the github for immediate coding experience.</p>
+                  <div class="button-group"><a href="https://speakerdeck.com/latcraft/the-way-to-go" target="_blank" class="button effect"> 
+                      <div data-hover="view slides">view slides</div></a>
+                  </div>
+                </li>
+                <li>
+                  <div class="title-holder">
+                    <h3>There is always Erlang</h3>
+                  </div>
+                  <div class="author"><img src="img/speakers/savelyev.png" alt=""/>
+                    <h5>Jurijs Saveljevs</h5><span>Rubylight</span>
+                  </div>
+                  <p>This talk is devoted to giving overall insight on some fundamental problems on how we perceive and perform development of modern software and suggesting plausible cure in Erlang adoption. It has never been easier to address many of never-ending issues with parallel, distributed and fault tolerant computing. Get to know the Erlang-way of fighting against complexity of software world before those problems catch you unprepared!</p>
+                  <div class="button-group"><a href="https://speakerdeck.com/latcraft/there-is-always-erlang" target="_blank" class="button effect"> 
+                      <div data-hover="view slides">view slides</div></a>
+                  </div>
+                </li>
+              </ul>
+              <div class="pagination">
+                <ul></ul>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="container">
+              <div class="group">
+                <div class="description"> 
+                  <h3>Team and Personal Effectiveness</h3>
+                  <p>We'd love to spend 24/7 in code, but software development is all about people. We will talk about teams, people, what makes them tick and what should you do to become a great team player.</p>
+                </div>
+                <div class="bubble">
+                  <ul>
+                    <li> <strong>date:</strong>3 February, 2015</li>
+                    <li> <strong>time:</strong>18:30</li>
+                  </ul>
+                </div>
               </div>
               <ul class="speakers">
                 <li>
@@ -169,50 +253,56 @@
                 <ul></ul>
               </div>
             </div>
-            <div class="slide">
-              <div class="description"> 
-                <h3>Programming Languages You Should Know About</h3>
-                <p>There are cool programming languages available that are not yet mainstream, but deserves significant attention. Come over and learn more about sharp programming languages such as Rust, Golang and Erlang.</p>
-              </div>
-              <div class="bubble">
-                <ul>
-                  <li> <strong>date:</strong>3 March, 2015</li>
-                  <li> <strong>time:</strong>18:30</li>
-                  <li> <strong>venue: </strong><a id="goto-map" href="#map">Zaļa iela 1</a></li>
-                </ul><a id="reserve-seat" class="button big">book a seat</a>
+          </div>
+          <div class="slide">
+            <div class="container">
+              <div class="group">
+                <div class="description"> 
+                  <h3>CIO and CTO lessons learned</h3>
+                  <p>Learn what does it mean to lead the way and what true leaders expect from their peers. Come over to hear deep insights from guys that went long path towards becoming Chiefs.</p>
+                </div>
+                <div class="bubble">
+                  <ul>
+                    <li> <strong>date:</strong>6 January, 2015</li>
+                    <li> <strong>time:</strong>18:30</li>
+                  </ul>
+                </div>
               </div>
               <ul class="speakers">
                 <li>
                   <div class="title-holder">
-                    <h3>The Sweet Flavour of Rust</h3>
+                    <h3>Epiphany From A Specialist As Worst CIO Ever</h3>
                   </div>
-                  <div class="author"><img src="img/speakers/maslov.png" alt=""/>
-                    <h5>Leonids Maslovs</h5><span>Galeo Consulting</span>
+                  <div class="author"><img src="img/speakers/maris-veiders.jpg" alt=""/>
+                    <h5>Māris Veide</h5><span>CIO at E-Global Holding</span>
                   </div>
-                  <p>Every chef now and then uses pinch of his secret spices to make a dish somewhat special and exquisite. This talk will provide introduction into nature of Rust sweetness and will answer to most important questions: Why and When does it make our dishes better? We will iterate over small code snippets and take a look How strong typing and functional thinking can be applied to low level system programming.</p>
-                  <div class="button-group">
-                  </div>
-                </li>
-                <li>
-                  <div class="title-holder">
-                    <h3>The Way to Go</h3>
-                  </div>
-                  <div class="author"><img src="img/speakers/ressin.png" alt=""/>
-                    <h5>Anatoly Ressin</h5><span>C.T.Co</span>
-                  </div>
-                  <p>This talk will guide you through the core concepts of the Go. We will cover the type system, memory model, packaging and of course the famous concurrency primitives of the language: goroutines and channels. Small working code snippets will be available on the github for immediate coding experience.</p>
-                  <div class="button-group">
+                  <p>Maris will share his empirical findings from two very distinct perspectives of IT Specialist and CIO - how kicking some ice is related to to literally breaking speed limits while going to work, which [just as a side effect] - leads to earning a lot more money too.</p>
+                  <div class="button-group"><a href="https://speakerdeck.com/latcraft/epiphany-from-a-specialist-as-worst-cio-ever" target="_blank" class="button effect"> 
+                      <div data-hover="view slides">view slides</div></a><a href="https://www.youtube.com/watch?v=CeVR2q8O9gU" target="_blank" class="button icon"><i class="fa fa-play-circle"></i></a>
                   </div>
                 </li>
                 <li>
                   <div class="title-holder">
-                    <h3>There is always Erlang</h3>
+                    <h3>Building Technical Competence</h3>
                   </div>
-                  <div class="author"><img src="img/speakers/savelyev.png" alt=""/>
-                    <h5>Jurijs Saveljevs</h5><span>Rubylight</span>
+                  <div class="author"><img src="img/speakers/raimonds-simanovskis.jpg" alt=""/>
+                    <h5>Raimonds Simanovskis</h5><span>Founder at eazyBi</span>
                   </div>
-                  <p>This talk is devoted to giving overall insight on some fundamental problems on how we perceive and perform development of modern software and suggesting plausible cure in Erlang adoption. It has never been easier to address many of never-ending issues with parallel, distributed and fault tolerant computing. Get to know the Erlang-way of fighting against complexity of software world before those problems catch you unprepared!</p>
-                  <div class="button-group">
+                  <p>Raimonds has been CTO for large software development company and now is CEO/CTO of a small startup. He will talk about several topics and compare from his experience what has been common and what different in large and small teams.</p>
+                  <div class="button-group"><a href="https://speakerdeck.com/latcraft/building-technical-competence" target="_blank" class="button effect"> 
+                      <div data-hover="view slides">view slides</div></a><a href="https://www.youtube.com/watch?v=gsdJ5kgKdco" target="_blank" class="button icon"><i class="fa fa-play-circle"></i></a>
+                  </div>
+                </li>
+                <li>
+                  <div class="title-holder">
+                    <h3>Game Of Throneware</h3>
+                  </div>
+                  <div class="author"><img src="img/speakers/jakub-nabrdalik.jpg" alt=""/>
+                    <h5>Jakub Nabrdalik</h5><span>IT Manager at 4finance</span>
+                  </div>
+                  <p>Jakub will reveal how not to get killed when a developer becomes a manager. What happens, when you become a manager? How do you organize teams, workspace? How do you help people? How do you deal with politics, communication? And much more.</p>
+                  <div class="button-group"><a href="https://speakerdeck.com/latcraft/game-of-throneware" target="_blank" class="button effect"> 
+                      <div data-hover="view slides">view slides</div></a><a href="https://www.youtube.com/watch?v=gsdJ5kgKdco" target="_blank" class="button icon"><i class="fa fa-play-circle"></i></a>
                   </div>
                 </li>
               </ul>
@@ -221,8 +311,8 @@
               </div>
             </div>
           </div>
-        </div><a href="#" class="prev button"><span>Prev</span><i class="fa fa-angle-left"></i></a><a href="#" class="next button"><span>Next</span><i class="fa fa-angle-right"></i></a>
-      </div>
+        </div>
+      </div><a href="#" class="prev button inactive"><span>Prev</span><i class="fa fa-angle-left"></i></a><a href="#" class="next button inactive"><span>Next</span><i class="fa fa-angle-right"></i></a>
     </section>
     <section id="speaker">
       <div class="bg"></div>
@@ -240,6 +330,105 @@
         <p>Want to become a sponsor? <a href="mailto:hello@latcraft.lv" class="text-link">Get in touch!</a></p>
       </div>
     </section>
+    <section id="challenge">
+      <div class="container">
+        <h2 class="title"> <i class="fa fa-trophy"></i> Challenge</h2>
+        <div class="description">
+          <p>
+             
+            Our join invention with Amazon is something we called <strong>Cloudopoly.</strong> Each month we are having a challenge related to Amazon AWS. Top 3 solutions get prizes. If you get in top 3 for 3 times, you get a special prize.
+          </p>
+        </div>
+        <div class="results">
+          <ul>
+            <li class="month slide">
+              <h3>December</h3>
+              <ol class="awarded">
+                <li>
+                   
+                  Eriks Harchevs 
+                </li>
+                <li>
+                   
+                  Teodors Zeltiņš 
+                </li>
+                <li>
+                   
+                  Jurijs Saveljevs 
+                </li>
+              </ol>
+              <div class="button-group"><a href="https://github.com/latcraft/cloudopoly-search" class="button effect">
+                  <div data-hover="details">details</div></a></div>
+            </li>
+            <li class="month slide">
+              <h3>January</h3>
+              <ol class="awarded">
+                <li>
+                   
+                  Vadims Yagodins 
+                </li>
+                <li>
+                   
+                  Vlad Moiseyenko 
+                </li>
+                <li>
+                   
+                  Sandris Artemjevs 
+                </li>
+              </ol>
+              <div class="button-group"><a href="https://github.com/latcraft/cloudopoly-pics" class="button effect">
+                  <div data-hover="details">details</div></a></div>
+            </li>
+            <li class="month slide">
+              <h3>February</h3>
+              <p>This challenge has been cancelled.</p>
+              <div class="button-group"><a href="https://github.com/latcraft/cloudopoly-docker/" class="button effect">
+                  <div data-hover="details">details</div></a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="learn">
+      <div class="container">
+        <h2 class="title">Learn</h2>
+        <p>Some people collect postmarks. Our community collects great information. Here is a GitHub pepositiories with different things to learn. Or maybe you have something to add? Fork and do a pull-request!</p>
+        <div class="lean-group">
+          <div class="watch item"><a href="https://github.com/latcraft/what2read" target="_blank">
+              <div class="books">
+                <div class="book">
+                  <div class="rug"></div>
+                  <div class="omslag"></div>
+                  <div class="omslagrond"></div>
+                  <div class="bladeren"></div>
+                </div>
+                <div class="book">
+                  <div class="rug"></div>
+                  <div class="omslag"></div>
+                  <div class="omslagrond"></div>
+                  <div class="bladeren"></div>
+                </div>
+                <div class="book">
+                  <div class="rug"></div>
+                  <div class="omslag"></div>
+                  <div class="omslagrond"></div>
+                  <div class="bladeren"></div>
+                </div>
+              </div>
+              <p>Books are always good to read, but witch books? In our community we have gathered a few that we think is a must read.</p></a></div>
+          <div class="read item"><a href="https://github.com/latcraft/what2watch" target="_blank">
+              <div class="cameras">
+                <div class="camera">
+                  <div class="base"></div>
+                  <div class="roll"></div>
+                  <div class="roll last"></div>
+                  <div class="lense"></div>
+                </div>
+              </div>
+              <p>Not always you have time for books or maybe you just like watching more, we have a collection of videos too.</p></a></div>
+        </div>
+      </div>
+    </section>
     <section id="sharing">
       <div class="container">
         <div class="twitter">
@@ -255,67 +444,6 @@
             <p>Memories from the last event.</p>
             <p>See all photos on <a href="https://www.flickr.com/photos/latcraft/" target="_blank" class="text-link invert">Flickr</a></p>
           </div>
-        </div>
-      </div>
-    </section>
-    <section id="challenge">
-      <div class="container">
-        <h2 class="title"> <i class="fa fa-trophy"></i> Challenge</h2>
-        <div class="description">
-          <p>
-             
-            Our join invention with Amazon is something we called <strong>Cloudopoly.</strong> Each month we are having a challenge related to Amazon AWS. Top 3 solutions get prizes. If you get in top 3 for 3 times, you get a special prize.
-          </p>
-        </div>
-        <div class="results">
-          <div class="carousel">
-            <ul class="holder">
-              <li class="month slide">
-                <h3>December</h3>
-                <ol class="awarded">
-                  <li>
-                     
-                    Eriks Harchevs 
-                  </li>
-                  <li>
-                     
-                    Teodors Zeltiņš 
-                  </li>
-                  <li>
-                     
-                    Jurijs Saveljevs 
-                  </li>
-                </ol>
-                <div class="button-group"><a href="https://github.com/latcraft/cloudopoly-search" class="button effect">
-                    <div data-hover="details">details</div></a></div>
-              </li>
-              <li class="month slide">
-                <h3>January</h3>
-                <ol class="awarded">
-                  <li>
-                     
-                    Vadims Yagodins 
-                  </li>
-                  <li>
-                     
-                    Vlad Moiseyenko 
-                  </li>
-                  <li>
-                     
-                    Sandris Artemjevs 
-                  </li>
-                </ol>
-                <div class="button-group"><a href="https://github.com/latcraft/cloudopoly-pics" class="button effect">
-                    <div data-hover="details">details</div></a></div>
-              </li>
-              <li class="month slide">
-                <h3>February</h3>
-                <p>This challenge is still in progress. You can still take part.</p>
-                <div class="button-group"><a href="https://github.com/latcraft/cloudopoly-docker/" class="button effect">
-                    <div data-hover="details">details</div></a></div>
-              </li>
-            </ul>
-          </div><a href="#" class="prev button"><span>Prev</span><i class="fa fa-angle-left"></i></a><a href="#" class="next button"><span>Next</span><i class="fa fa-angle-right"></i></a>
         </div>
       </div>
     </section>
@@ -346,10 +474,8 @@
         </div>
       </div>
     </section>
-    <section id="map">
-      <div class="container">
-        <h2 class="title">Venue</h2>
-      </div>
+    <section id="map" class="amazon">
+      <div class="container"></div>
     </section>
     <section id="contact">
       <div class="container">
@@ -362,7 +488,8 @@
         <div class="copyright">LatCraft &copy; 2015, All rights reserved.</div>
       </div>
     </footer>
-    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDOIb941BqNlrMnNfS6Nhqf7buKMVPbmI4"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB-7Vqco_p2pubCv8qbZU5tQjZ8bR3v20k"></script>
     <script src="js/main.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
