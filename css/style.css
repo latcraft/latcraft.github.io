@@ -580,7 +580,7 @@ section#news {
       #off-canvas ul {
         float: right;
         width: auto;
-        margin: 30px 0; } }
+        margin: 34px 0; } }
     #off-canvas ul li {
       overflow: hidden;
       display: block;
@@ -616,7 +616,6 @@ section#news {
         @media screen and (min-width: 1020px) {
           #off-canvas ul li a {
             color: #fff;
-            line-height: 40px;
             padding: 0 10px;
             background: transparent; } }
         #off-canvas ul li a.twitter {
@@ -626,7 +625,7 @@ section#news {
         #off-canvas ul li a.speakerdeck {
           background: #3ab278;
           color: #3ab278;
-          padding: 18px 0; }
+          padding: 11px 0; }
           #off-canvas ul li a.speakerdeck span {
             overflow: hidden;
             display: inline-block;
@@ -643,6 +642,15 @@ section#news {
               font-size: 14px;
               line-height: 0.8 !important;
               padding: 0 1px; }
+        #off-canvas ul li a.lanyrd {
+          background: #4082cb; }
+          #off-canvas ul li a.lanyrd i {
+            height: 32px;
+            width: 100%;
+            display: block;
+            line-height: 1;
+            background: url('../img/lanyrd.png') no-repeat center center;
+            background-size: 14px 14px; }
         #off-canvas ul li a.youtube {
           background: #CE332D; }
         #off-canvas ul li a.linkedin {
@@ -654,7 +662,7 @@ section#news {
           #off-canvas ul li a.speakerdeck {
             background: #3ab278;
             color: #3ab278;
-            padding: 11px 0; }
+            padding: 0; }
             #off-canvas ul li a.speakerdeck span {
               overflow: hidden;
               display: inline-block;
@@ -670,7 +678,7 @@ section#news {
                 padding: 0 1px; }
           #off-canvas ul li a.network {
             background: #111 !important;
-            margin: 4px 0 0 5px;
+            margin: 0 0 0 5px;
             height: 32px;
             width: 32px;
             -webkit-border-radius: 50%;
@@ -680,6 +688,10 @@ section#news {
             #off-canvas ul li a.network i {
               line-height: 32px;
               font-size: 12px; }
+          #off-canvas ul li a.lanyrd {
+            padding: 0; }
+            #off-canvas ul li a.lanyrd i {
+              background-size: 10px 10px; }
           #off-canvas ul li a:hover {
             background: #FF4A4A; }
             #off-canvas ul li a:hover.speakerdeck i {
@@ -1104,11 +1116,15 @@ section#events .carousel {
 section#events .holder {
   width: 1000%;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-transform: translate3d(-90%, 0px, 0px);
+  -ms-transform: translate3d(-90%, 0px, 0px);
+  -o-transform: translate3d(-90%, 0px, 0px);
+  transform: translate3d(-90%, 0px, 0px); }
 section#events .slide {
   display: block;
   overflow: hidden;
-  float: left;
+  float: right;
   width: 10%;
   position: relative; }
   section#events .slide .container {
@@ -1118,70 +1134,46 @@ section#events .slide {
     overflow: hidden; }
   section#events .slide .speakers {
     overflow: hidden;
-    width: 400%;
+    width: 1000%;
     margin: 0 0 40px 0;
-    position: relative;
-    -webkit-transition: 0.3s height cubic-bezier(0.7, 0, 0.3, 1) 0s;
-    -o-transition: 0.3s height cubic-bezier(0.7, 0, 0.3, 1) 0s;
-    transition: 0.3s height cubic-bezier(0.7, 0, 0.3, 1) 0s; }
-    @media screen and (min-width: 690px) {
+    position: relative; }
+    @media screen and (min-width: 520px) {
       section#events .slide .speakers {
-        width: 100%; } }
+        width: 225%; } }
     @media screen and (min-width: 1020px) {
       section#events .slide .speakers {
         margin: 0; } }
     section#events .slide .speakers li {
       float: left;
-      width: 25%;
+      width: 10%;
       padding: 0 10px; }
+      @media screen and (min-width: 520px) {
+        section#events .slide .speakers li {
+          width: 15%; } }
       section#events .slide .speakers li p {
         font-size: 16px;
         line-height: 1.7; }
-      @media screen and (min-width: 690px) {
-        section#events .slide .speakers li {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 31.76157%;
-          padding: 0; }
-          section#events .slide .speakers li:last-child {
-            margin-right: 0; } }
       @media screen and (min-width: 1020px) {
         section#events .slide .speakers li:hover h3 {
           border-bottom: 2px solid #b7b7b7; }
         section#events .slide .speakers li:hover h5 {
           color: #800000; } }
-      section#events .slide .speakers li:nth-child(3n) {
-        margin-right: 0; }
       section#events .slide .speakers li .button {
         display: inline-block;
         float: none;
         margin: 0 10px 0 0; }
     section#events .slide .speakers.amazon {
-      margin: 0;
-      width: 1000%; }
-      @media screen and (min-width: 690px) {
-        section#events .slide .speakers.amazon {
-          width: 200%; } }
+      margin: 0; }
       @media screen and (min-width: 690px) {
         section#events .slide .speakers.amazon + .pagination {
           display: block; } }
-      section#events .slide .speakers.amazon li {
-        width: 10%; }
-        @media screen and (min-width: 690px) {
-          section#events .slide .speakers.amazon li {
-            float: left;
-            display: block;
-            margin-right: 2.35765%;
-            width: 14.70196%; }
-            section#events .slide .speakers.amazon li:last-child {
-              margin-right: 0; } }
 section#events .pagination {
   width: 100%;
   display: block;
   float: left;
   margin: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 0 0 40px 0; }
   @media screen and (min-width: 690px) {
     section#events .pagination {
       display: none; }
@@ -1245,8 +1237,6 @@ section#events a.prev.button, section#events a.next.button {
       width: 14.70196%; }
       section#events a.prev.button:last-child, section#events a.next.button:last-child {
         margin-right: 0; } }
-  section#events a.prev.button.inactive, section#events a.next.button.inactive {
-    display: none; }
   @media screen and (min-width: 1020px) {
     section#events a.prev.button, section#events a.next.button {
       position: absolute;
@@ -1262,6 +1252,8 @@ section#events a.prev.button, section#events a.next.button {
       background: #dedede; }
       section#events a.prev.button:hover, section#events a.next.button:hover {
         background: #00CB9F; } }
+  section#events a.prev.button.inactive, section#events a.next.button.inactive {
+    display: none; }
   section#events a.prev.button i, section#events a.next.button i {
     float: left;
     line-height: 1.8;
@@ -1282,19 +1274,10 @@ section#events a.next.button {
 
 section#speaker {
   padding: 120px 0;
-  background: #330707;
-  position: relative; }
-  section#speaker .bg {
-    background: url("../img/speaker-bg.jpg") center no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    opacity: 0.4;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; }
+  position: static;
+  background: #330707 url("../img/speaker-bg.jpg") center no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
   section#speaker .container {
     position: relative;
     z-index: 100; }
