@@ -956,7 +956,7 @@ section#events .group {
   overflow: hidden;
   margin: 0 10px 40px 10px; }
   section#events .group.amazon {
-    background: #FFE35B;
+    background: #DCAE32;
     background-size: 600px auto;
     color: #fff;
     margin: 0 0 40px 0; }
@@ -981,7 +981,8 @@ section#events .group {
     section#events .group.amazon .description {
       margin: 0;
       padding: 40px;
-      width: 100%; }
+      width: 100%;
+      background: #FFE35B; }
       @media screen and (min-width: 690px) {
         section#events .group.amazon .description {
           width: 70%; } }
@@ -1163,7 +1164,7 @@ section#events .slide {
         float: none;
         margin: 0 10px 0 0; }
     section#events .slide .speakers.amazon {
-      margin: 0; }
+      margin: 0 0 40px 0; }
       @media screen and (min-width: 690px) {
         section#events .slide .speakers.amazon + .pagination {
           display: block; } }
