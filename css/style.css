@@ -1073,6 +1073,11 @@ section#events .slide {
       @media screen and (min-width: 690px) {
         section#events .slide .speakers.amazon + .pagination {
           display: block; } }
+    section#events .slide .speakers.extended_event {
+      margin: 0 0 40px 0; }
+      @media screen and (min-width: 690px) {
+        section#events .slide .speakers.extended_event + .pagination {
+          display: block; } }
 section#events .pagination {
   width: 100%;
   display: block;
