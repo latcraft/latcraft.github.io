@@ -1210,7 +1210,7 @@ section#events .author {
   clear: both;
   margin: 20px 0;
   overflow: hidden; }
-  section#events .author img {
+  section#events .author img.headshot {
     width: 60px;
     height: 60px;
     display: block;
