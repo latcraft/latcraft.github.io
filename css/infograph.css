@@ -60,7 +60,7 @@ html {
   font-family: 'Economica';
   font-style: normal;
   font-weight: 400;
-  src: url(/fonts/Economica-normal-400.svg) format("svg"); }
+  src: local("Economica"), local("Economica-Regular"), url(/fonts/Economica-normal-400.svg) format("svg"); }
 
 h1, h2, h3,
 h4, h5, h6 {
