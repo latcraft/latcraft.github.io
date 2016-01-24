@@ -125,7 +125,6 @@ p {
         outline: medium; }
         .button.effect:hover div, .button.effect:focus div {
           -webkit-transform: translateY(-100%);
-              -ms-transform: translateY(-100%);
                   transform: translateY(-100%); } }
     .button.effect div {
       display: inline-block;
@@ -146,7 +145,6 @@ p {
         outline: medium; }
         .button.effect-hr:hover div, .button.effect-hr:focus div {
           -webkit-transform: translateX(-100%);
-              -ms-transform: translateX(-100%);
                   transform: translateX(-100%); } }
     .button.effect-hr div {
       display: inline-block;
