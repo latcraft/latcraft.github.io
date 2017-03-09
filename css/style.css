@@ -1829,8 +1829,8 @@ section#sponsors {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 100%;
-        margin-left: 0%; }
+        width: 65.88078%;
+        margin-left: 17.05961%; }
         section#sponsors ul:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 960px) {
@@ -1838,28 +1838,12 @@ section#sponsors {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 48.82117%;
-        margin-left: 25.58941%; }
+        width: 31.76157%;
+        margin-left: 34.11922%; }
         section#sponsors ul:last-child {
           margin-right: 0; } }
     section#sponsors ul li {
-      position: relative;
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 65.88078%;
-      margin-left: 17.05961%; }
-      section#sponsors ul li:last-child {
-        margin-right: 0; }
-      @media screen and (min-width: 690px) {
-        section#sponsors ul li {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 31.76157%;
-          margin-left: 0%; }
-          section#sponsors ul li:last-child {
-            margin-right: 0; } }
+      position: relative; }
       section#sponsors ul li img {
         width: 100%;
         height: auto;
