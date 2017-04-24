@@ -2,7 +2,7 @@
     {
         "announced": "true",
         "announcements": [
-            
+
         ],
         "capacity": 100,
         "classes": "extended_event",
@@ -64,7 +64,7 @@
                 "type": "break"
             },
             {
-                "bio": "Krav Mava Instructor, Founder @ Dro\u0161\u0101 Distance",
+                "bio": "Krav Maga Instructor, Founder @ Dro\u0161\u0101 Distance",
                 "description": "Ronalds will introduce you to Krav Maga and its principles. After a light warmup and some coordination exercises, you will try a couple of simple Krav Maga techniques. Both men and women allowed! :)",
                 "img": "img/speakers/ronalds.jpg",
                 "name": "Ronalds Seleckis",
@@ -89,7 +89,7 @@
     {
         "announced": "false",
         "announcements": [
-            
+
         ],
         "capacity": 130,
         "cards": {
@@ -183,7 +183,7 @@
     {
         "announced": false,
         "announcements": [
-            
+
         ],
         "capacity": 130,
         "cards": {
@@ -277,7 +277,7 @@
     {
         "announced": false,
         "announcements": [
-            
+
         ],
         "capacity": 60,
         "cards": {
@@ -844,7 +844,7 @@
                 "type": "start"
             },
             {
-                "bio": "Engagement Director, Idea Port Riga",
+                "bio": "Engagement Director, IPR",
                 "description": "The fundamentals of time and task management are well known to everybody. Still majority of us does not succeed in managing tasks, deadlines and schedules in the long run. Why personal efficiency methods are not working? How to make them working for you? How does our brain maintain the activities, wishes and emotions we have? What you should do in order to overcome the procrastination? Ljubov will provide her answers to these questions, as well as share her life hacks.",
                 "img": "img/speakers/ljubovbezhan.png",
                 "name": "Ljubov Be\u017ean",
