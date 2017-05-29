@@ -111,8 +111,7 @@ p {
   font-weight: 400;
   padding: 8px 20px;
   vertical-align: middle;
-  -webkit-transition: 0.2s all ease 0s;
-          transition: 0.2s all ease 0s;
+  transition: 0.2s all ease 0s;
   -webkit-appearance: none; }
   @media screen and (min-width: 1280px) {
     .button:hover {
@@ -129,8 +128,8 @@ p {
     .button.effect div {
       display: inline-block;
       position: relative;
-      -webkit-transition: -webkit-transform 0.3s ease 0s;
-              transition: transform 0.3s ease 0s; }
+      transition: -webkit-transform 0.3s ease 0s;
+      transition: transform 0.3s ease 0s; }
       .button.effect div:before {
         content: attr(data-hover);
         position: absolute;
@@ -149,8 +148,8 @@ p {
     .button.effect-hr div {
       display: inline-block;
       position: relative;
-      -webkit-transition: -webkit-transform 0.3s ease 0s;
-              transition: transform 0.3s ease 0s; }
+      transition: -webkit-transform 0.3s ease 0s;
+      transition: transform 0.3s ease 0s; }
       .button.effect-hr div:before {
         content: attr(data-hover);
         position: absolute;

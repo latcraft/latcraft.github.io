@@ -193,8 +193,7 @@ h6 {
   font-weight: 400;
   padding: 8px 16px;
   vertical-align: middle;
-  -webkit-transition: 0.2s all ease 0s;
-          transition: 0.2s all ease 0s;
+  transition: 0.2s all ease 0s;
   -webkit-appearance: none; }
   @media screen and (min-width: 1020px) {
     .button:hover {
@@ -211,8 +210,8 @@ h6 {
     .button.effect div {
       display: inline-block;
       position: relative;
-      -webkit-transition: -webkit-transform 0.3s ease 0s;
-              transition: transform 0.3s ease 0s; }
+      transition: -webkit-transform 0.3s ease 0s;
+      transition: transform 0.3s ease 0s; }
       .button.effect div:before {
         content: attr(data-hover);
         position: absolute;
@@ -231,8 +230,8 @@ h6 {
     .button.effect-hr div {
       display: inline-block;
       position: relative;
-      -webkit-transition: -webkit-transform 0.3s ease 0s;
-              transition: transform 0.3s ease 0s; }
+      transition: -webkit-transform 0.3s ease 0s;
+      transition: transform 0.3s ease 0s; }
       .button.effect-hr div:before {
         content: attr(data-hover);
         position: absolute;
@@ -291,8 +290,7 @@ h6 {
   overflow: hidden;
   color: #FF4A4A;
   z-index: 2;
-  -webkit-transition: all 0.3s ease 0s;
-          transition: all 0.3s ease 0s; }
+  transition: all 0.3s ease 0s; }
   .text-link:before {
     display: block;
     position: absolute;
@@ -304,8 +302,7 @@ h6 {
     -webkit-transform: translateY(94%);
             transform: translateY(94%);
     background: rgba(34, 44, 52, 0.1);
-    -webkit-transition: all 0.3s ease 0s;
-            transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
     z-index: -1;
     opacity: 1; }
   @media screen and (min-width: 1020px) {
@@ -389,8 +386,8 @@ section {
   overflow-y: auto;
   overflow-x: hidden;
   background: #fff;
-  -webkit-transition: 0.3s -webkit-transform ease 0s;
-          transition: 0.3s transform ease 0s; }
+  transition: 0.3s -webkit-transform ease 0s;
+  transition: 0.3s transform ease 0s; }
 
 p {
   margin: 0 0 20px 0;
@@ -446,8 +443,7 @@ section#modal {
       clear: both;
       display: block;
       height: 2px;
-      -webkit-transition: all 0.4s ease 0s;
-              transition: all 0.4s ease 0s;
+      transition: all 0.4s ease 0s;
       width: 30px;
       position: relative;
       top: 19px;
@@ -545,8 +541,7 @@ section#news {
   z-index: 500;
   overflow: hidden;
   background: rgba(34, 44, 52, 0.9);
-  -webkit-transition: 0.5s all cubic-bezier(0.7, 0, 0.3, 1) 0s;
-          transition: 0.5s all cubic-bezier(0.7, 0, 0.3, 1) 0s; }
+  transition: 0.5s all cubic-bezier(0.7, 0, 0.3, 1) 0s; }
   #off-canvas .container {
     position: absolute;
     margin-top: 70px;
@@ -555,8 +550,7 @@ section#news {
             transform: translate3d(0, 40px, 0px);
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: 0.3s all ease 0s;
-            transition: 0.3s all ease 0s; }
+    transition: 0.3s all ease 0s; }
     @media screen and (min-width: 1020px) {
       #off-canvas .container {
         margin-top: 0;
@@ -591,8 +585,7 @@ section#news {
       display: block;
       margin: 0 0 6px 0;
       clear: both;
-      -webkit-transition: 0.4s all ease 0s;
-              transition: 0.4s all ease 0s; }
+      transition: 0.4s all ease 0s; }
       #off-canvas .open span:last-child {
         margin: 0; }
   #off-canvas ul {
@@ -633,8 +626,7 @@ section#news {
         display: block;
         text-align: center;
         background: #111;
-        -webkit-transition: 0.4s all ease 0s;
-                transition: 0.4s all ease 0s; }
+        transition: 0.4s all ease 0s; }
         @media screen and (min-width: 1020px) {
           #off-canvas ul li a {
             color: #fff;
@@ -655,8 +647,7 @@ section#news {
             padding: 2px 2px;
             border-radius: 2px; }
             #off-canvas ul li a.speakerdeck span i {
-              -webkit-transition: 0.4s all ease 0s;
-                      transition: 0.4s all ease 0s;
+              transition: 0.4s all ease 0s;
               color: #3ab278;
               float: left;
               font-size: 14px;
@@ -720,8 +711,7 @@ section#news {
       min-height: 100px;
       -webkit-transform: translate3d(0px, -100px, 0px);
               transform: translate3d(0px, -100px, 0px);
-      -webkit-transition: 0.5s all cubic-bezier(0.7, 0, 0.3, 1) 0s;
-              transition: 0.5s all cubic-bezier(0.7, 0, 0.3, 1) 0s; }
+      transition: 0.5s all cubic-bezier(0.7, 0, 0.3, 1) 0s; }
       #off-canvas .logo {
         display: block; }
       #off-canvas .open {
@@ -744,21 +734,18 @@ section#news {
     width: 100%;
     display: block;
     overflow: auto;
-    -webkit-transition: 0.5s all cubic-bezier(0.7, 0, 0.3, 1) 0s;
-            transition: 0.5s all cubic-bezier(0.7, 0, 0.3, 1) 0s; }
+    transition: 0.5s all cubic-bezier(0.7, 0, 0.3, 1) 0s; }
     #off-canvas.visible.active .container {
       opacity: 1;
       visibility: visible;
       -webkit-transform: translate3d(0px, 0px, 0px);
               transform: translate3d(0px, 0px, 0px);
-      -webkit-transition: 0.3s all ease 0.5s;
-              transition: 0.3s all ease 0.5s; }
+      transition: 0.3s all ease 0.5s; }
     @media screen and (min-width: 1020px) {
       #off-canvas.visible.active {
         min-height: 100px; }
         #off-canvas.visible.active .container {
-          -webkit-transition: 0.3s opacity ease 0s;
-                  transition: 0.3s opacity ease 0s; } }
+          transition: 0.3s opacity ease 0s; } }
     #off-canvas.visible.active a.open span:first-child {
       -webkit-transform: translate3d(0px, 8px, 0px) rotateZ(-45deg);
               transform: translate3d(0px, 8px, 0px) rotateZ(-45deg); }
@@ -929,8 +916,7 @@ header#header {
         width: 256px; }
         header#header .info .button.opening div {
           padding: 18px 20px;
-          -webkit-transition: all 0.4s ease;
-                  transition: all 0.4s ease;
+          transition: all 0.4s ease;
           width: 256px;
           height: 72px;
           position: absolute;
@@ -950,8 +936,7 @@ header#header {
               left: -52px;
               top: -8px;
               content: "";
-              -webkit-transition: all 0.4s ease;
-                      transition: all 0.4s ease; }
+              transition: all 0.4s ease; }
           header#header .info .button.opening div p {
             width: 100%;
             height: 100px;
@@ -984,8 +969,7 @@ header#header {
           header#header .info .button.opening:hover strong:before {
             background-color: #473A38; }
           header#header .info .button.opening:hover p {
-            -webkit-transition: all 0.3s ease 0.25s;
-                    transition: all 0.3s ease 0.25s;
+            transition: all 0.3s ease 0.25s;
             opacity: 1;
             visability: visible;
             margin-top: 10px; } }
@@ -996,8 +980,7 @@ header#header {
             color: #565656; } }
       header#header .info .button span {
         color: #fff;
-        -webkit-transition: 0.2s all ease 0s;
-                transition: 0.2s all ease 0s;
+        transition: 0.2s all ease 0s;
         font-style: normal; }
       @media screen and (min-width: 1020px) {
         header#header .info .button {
@@ -1058,8 +1041,7 @@ header#header {
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  -webkit-transition: background 0.4s ease 0s;
-          transition: background 0.4s ease 0s; }
+  transition: background 0.4s ease 0s; }
   @media screen and (max-width: 520px) {
     #header .fallback {
       display: block; } }
@@ -1186,8 +1168,7 @@ section#events h3 {
   font-weight: 700;
   display: inline;
   text-align: center;
-  -webkit-transition: 0.2s border-color linear 0s;
-          transition: 0.2s border-color linear 0s;
+  transition: 0.2s border-color linear 0s;
   border-bottom: 1px solid #f5f5f5; }
 
 section#events h4 {
@@ -1217,8 +1198,7 @@ section#events .author {
   section#events .author h5 {
     font-size: 18px;
     margin: 8px 0 0 0;
-    -webkit-transition: 0.2s color linear 0s;
-            transition: 0.2s color linear 0s; }
+    transition: 0.2s color linear 0s; }
   section#events .author span {
     display: block;
     float: left; }
@@ -1328,8 +1308,7 @@ section#events .pagination {
       border-radius: 50%;
       overflow: hidden;
       text-indent: -9999px;
-      -webkit-transition: 0.4s all ease 0s;
-              transition: 0.4s all ease 0s; }
+      transition: 0.4s all ease 0s; }
     section#events .pagination li.active a {
       border-color: #565656;
       background: #565656; }
@@ -1482,8 +1461,7 @@ section#challenge .month {
     font-weight: 700;
     display: inline;
     text-align: center;
-    -webkit-transition: 0.2s border-color linear 0s;
-            transition: 0.2s border-color linear 0s;
+    transition: 0.2s border-color linear 0s;
     border-bottom: 1px solid #f5f5f5; }
   @media screen and (min-width: 1020px) {
     section#challenge .month:hover h3 {
@@ -1695,8 +1673,7 @@ section#digest {
     height: auto;
     padding: 0;
     line-height: 1.6;
-    -webkit-transition: 0.3s all ease 0s;
-            transition: 0.3s all ease 0s; }
+    transition: 0.3s all ease 0s; }
     section#digest .error .group, section#digest .success .group {
       margin: 20px 0 0 0;
       padding: 15px;
@@ -1752,8 +1729,7 @@ section#digest {
           margin-right: 0; } }
     section#digest #subscription form {
       background: #212121;
-      -webkit-transition: 0.3s all ease 0s;
-              transition: 0.3s all ease 0s;
+      transition: 0.3s all ease 0s;
       display: block;
       overflow: hidden;
       padding: 15px; }
@@ -1791,8 +1767,7 @@ section#digest {
       font-size: 1.8rem;
       line-height: 1.75em;
       font-family: "Roboto Slab", serif;
-      -webkit-transition: 0.4s all ease 0s;
-              transition: 0.4s all ease 0s;
+      transition: 0.4s all ease 0s;
       float: left;
       display: block;
       margin-right: 2.35765%;
@@ -1879,8 +1854,7 @@ section#map {
     z-index: 100;
     margin: -65px 0 0 -110px;
     font-family: "Roboto Slab", serif;
-    -webkit-transition: all 0.2s ease 0s;
-            transition: all 0.2s ease 0s; }
+    transition: all 0.2s ease 0s; }
     section#map .maptip:after {
       content: " ";
       backgound: transparent;
@@ -1953,8 +1927,7 @@ section#learn {
       left: 40px;
       position: absolute;
       width: 16px;
-      -webkit-transition: 0.4s all ease 0s;
-              transition: 0.4s all ease 0s; }
+      transition: 0.4s all ease 0s; }
     section#learn .book .bladeren {
       background: none repeat scroll 0 0 #f5f5f5;
       border-bottom: 3px solid transparent;
@@ -1964,8 +1937,7 @@ section#learn {
       position: absolute;
       top: 3px;
       width: 34px;
-      -webkit-transition: 0.4s all ease 0s;
-              transition: 0.4s all ease 0s; }
+      transition: 0.4s all ease 0s; }
     section#learn .book .omslag {
       border-bottom: 3px solid #D32424;
       border-top: 3px solid #D32424;
@@ -1973,8 +1945,7 @@ section#learn {
       left: 0;
       position: absolute;
       width: 40px;
-      -webkit-transition: 0.4s all ease 0s;
-              transition: 0.4s all ease 0s; }
+      transition: 0.4s all ease 0s; }
     section#learn .book .rug {
       border-bottom: 12px solid #D32424;
       border-bottom-right-radius: 12px;
@@ -1984,8 +1955,7 @@ section#learn {
       position: absolute;
       left: 40px;
       width: 50px;
-      -webkit-transition: 0.4s all ease 0s;
-              transition: 0.4s all ease 0s; }
+      transition: 0.4s all ease 0s; }
   section#learn .cameras {
     float: left;
     float: left;
@@ -2012,8 +1982,7 @@ section#learn {
       height: 50px;
       background: #FF4A4A;
       border-radius: 3px;
-      -webkit-transition: 0.4s background ease 0s;
-              transition: 0.4s background ease 0s; }
+      transition: 0.4s background ease 0s; }
     section#learn .cameras .lense {
       width: 30px;
       height: 20px;
@@ -2023,8 +1992,7 @@ section#learn {
       top: 15px;
       left: -25px;
       display: block;
-      -webkit-transition: 0.4s background ease 0s;
-              transition: 0.4s background ease 0s; }
+      transition: 0.4s background ease 0s; }
       section#learn .cameras .lense:after {
         width: 10px;
         height: 30px;
@@ -2035,8 +2003,7 @@ section#learn {
         left: 0px;
         top: -5px;
         z-index: 10;
-        -webkit-transition: 0.4s background ease 0s;
-                transition: 0.4s background ease 0s; }
+        transition: 0.4s background ease 0s; }
     section#learn .cameras .roll {
       width: 50px;
       height: 50px;
@@ -2049,8 +2016,7 @@ section#learn {
       border: 3px solid #fff;
       -webkit-animation: anim-rotate 4s 0s linear infinite;
               animation: anim-rotate 4s 0s linear infinite;
-      -webkit-transition: 0.4s background ease 0s;
-              transition: 0.4s background ease 0s; }
+      transition: 0.4s background ease 0s; }
       section#learn .cameras .roll:after {
         display: block;
         content: " ";
@@ -2062,8 +2028,7 @@ section#learn {
         margin-left: -3px;
         border-radius: 3px;
         background: #fff;
-        -webkit-transition: 0.4s background ease 0s;
-                transition: 0.4s background ease 0s; }
+        transition: 0.4s background ease 0s; }
       section#learn .cameras .roll:before {
         display: block;
         content: " ";
@@ -2075,8 +2040,7 @@ section#learn {
         margin: -5px 0 0 -5px;
         border-radius: 5px;
         background: #D32424;
-        -webkit-transition: 0.4s background ease 0s;
-                transition: 0.4s background ease 0s; }
+        transition: 0.4s background ease 0s; }
       section#learn .cameras .roll.last {
         width: 44px;
         height: 44px;
@@ -2170,8 +2134,7 @@ section#about .arrow {
   left: 50%;
   bottom: -1px;
   margin: 0 0 0 -10px;
-  -webkit-transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1) 0s;
-          transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1) 0s; }
+  transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1) 0s; }
 
 section#about .arrow:before {
   display: block;
@@ -2213,8 +2176,7 @@ section#about #member-list ul {
   opacity: 0;
   height: 0;
   overflow: hidden;
-  -webkit-transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1) 0s;
-          transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+  transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1) 0s;
   pointer-events: none; }
   section#about #member-list ul.active {
     visibility: visible;
@@ -2286,8 +2248,7 @@ section#about #member-list li {
     z-index: 100;
     bottom: 110%;
     margin-bottom: -10px;
-    -webkit-transition: all 0.2s ease 0s;
-            transition: all 0.2s ease 0s; }
+    transition: all 0.2s ease 0s; }
     section#about #member-list li .tip:after {
       content: " ";
       backgound: transparent;
