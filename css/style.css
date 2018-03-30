@@ -51,71 +51,26 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-@-webkit-keyframes anim-open {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale3d(1.1, 1.1, 1);
-            transform: scale3d(1.1, 1.1, 1); }
-  100% {
-    opacity: 1;
-    -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1); } }
-
 @keyframes anim-open {
   0% {
     opacity: 0;
-    -webkit-transform: scale3d(1.1, 1.1, 1);
-            transform: scale3d(1.1, 1.1, 1); }
+    transform: scale3d(1.1, 1.1, 1); }
   100% {
     opacity: 1;
-    -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1); } }
-
-@-webkit-keyframes anim-close {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0;
-    -webkit-transform: scale3d(0.9, 0.9, 1);
-            transform: scale3d(0.9, 0.9, 1); } }
+    transform: scale3d(1, 1, 1); } }
 
 @keyframes anim-close {
   0% {
     opacity: 1; }
   100% {
     opacity: 0;
-    -webkit-transform: scale3d(0.9, 0.9, 1);
-            transform: scale3d(0.9, 0.9, 1); } }
-
-@-webkit-keyframes anim-rotate {
-  0% {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg); }
-  100% {
-    -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg); } }
+    transform: scale3d(0.9, 0.9, 1); } }
 
 @keyframes anim-rotate {
   0% {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg); }
+    transform: rotateZ(0deg); }
   100% {
-    -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg); } }
-
-@-webkit-keyframes anim-books {
-  0% {
-    top: -30%;
-    opacity: 0; }
-  30% {
-    opacity: 1;
-    top: 20%; }
-  80% {
-    opacity: 1;
-    top: 20%; }
-  100% {
-    opacity: 0;
-    top: 60%; } }
+    transform: rotateZ(360deg); } }
 
 @keyframes anim-books {
   0% {
@@ -130,14 +85,6 @@ html {
   100% {
     opacity: 0;
     top: 60%; } }
-
-@-webkit-keyframes anim-arrow {
-  0% {
-    top: -10px; }
-  50% {
-    top: 10px; }
-  100% {
-    top: -10px; } }
 
 @keyframes anim-arrow {
   0% {
@@ -205,40 +152,34 @@ h6 {
       .button.effect:hover, .button.effect:focus {
         outline: medium; }
         .button.effect:hover div, .button.effect:focus div {
-          -webkit-transform: translateY(-100%);
-                  transform: translateY(-100%); } }
+          transform: translateY(-100%); } }
     .button.effect div {
       display: inline-block;
       position: relative;
-      transition: -webkit-transform 0.3s ease 0s;
       transition: transform 0.3s ease 0s; }
       .button.effect div:before {
         content: attr(data-hover);
         position: absolute;
         top: 100%;
         left: 0px;
-        -webkit-transform: translate3d(0px, 0px, 0px);
-                transform: translate3d(0px, 0px, 0px); }
+        transform: translate3d(0px, 0px, 0px); }
   .button.effect-hr {
     overflow: hidden; }
     @media screen and (min-width: 1020px) {
       .button.effect-hr:hover, .button.effect-hr:focus {
         outline: medium; }
         .button.effect-hr:hover div, .button.effect-hr:focus div {
-          -webkit-transform: translateX(-100%);
-                  transform: translateX(-100%); } }
+          transform: translateX(-100%); } }
     .button.effect-hr div {
       display: inline-block;
       position: relative;
-      transition: -webkit-transform 0.3s ease 0s;
       transition: transform 0.3s ease 0s; }
       .button.effect-hr div:before {
         content: attr(data-hover);
         position: absolute;
         top: 0px;
         left: 100%;
-        -webkit-transform: translate3d(0px, 0px, 0px);
-                transform: translate3d(0px, 0px, 0px); }
+        transform: translate3d(0px, 0px, 0px); }
   .button.invert {
     background: #601212; }
   .button.icon {
@@ -299,8 +240,7 @@ h6 {
     content: " ";
     height: 100%;
     width: 100%;
-    -webkit-transform: translateY(94%);
-            transform: translateY(94%);
+    transform: translateY(94%);
     background: rgba(34, 44, 52, 0.1);
     transition: all 0.3s ease 0s;
     z-index: -1;
@@ -310,8 +250,7 @@ h6 {
       color: #601212; }
       .text-link:hover:before {
         opacity: 1;
-        -webkit-transform: translateY(0%);
-                transform: translateY(0%); } }
+        transform: translateY(0%); } }
   .text-link.invert {
     color: #fff; }
     .text-link.invert:before {
@@ -386,7 +325,6 @@ section {
   overflow-y: auto;
   overflow-x: hidden;
   background: #fff;
-  transition: 0.3s -webkit-transform ease 0s;
   transition: 0.3s transform ease 0s; }
 
 p {
@@ -448,12 +386,10 @@ section#modal {
       position: relative;
       top: 19px;
       left: 5px;
-      -webkit-transform: rotateZ(45deg);
-              transform: rotateZ(45deg); }
+      transform: rotateZ(45deg); }
       section#modal .close span:nth-child(2) {
         top: 17px;
-        -webkit-transform: rotateZ(-45deg);
-                transform: rotateZ(-45deg); }
+        transform: rotateZ(-45deg); }
   section#modal .container {
     max-width: 690px;
     position: relative;
@@ -478,8 +414,7 @@ section#modal {
     pointer-events: auto;
     opacity: 1;
     visability: visible;
-    -webkit-animation: anim-open 0.4s;
-            animation: anim-open 0.4s;
+    animation: anim-open 0.4s;
     display: block; }
 
 section#news {
@@ -536,8 +471,7 @@ section#news {
   width: 50px;
   min-height: 46px;
   position: fixed;
-  -webkit-transform: translate3d(30px, -46px, 0px);
-          transform: translate3d(30px, -46px, 0px);
+  transform: translate3d(30px, -46px, 0px);
   z-index: 500;
   overflow: hidden;
   background: rgba(34, 44, 52, 0.9);
@@ -546,8 +480,7 @@ section#news {
     position: absolute;
     margin-top: 70px;
     margin-bottom: 70px;
-    -webkit-transform: translate3d(0, 40px, 0px);
-            transform: translate3d(0, 40px, 0px);
+    transform: translate3d(0, 40px, 0px);
     opacity: 0;
     visibility: hidden;
     transition: 0.3s all ease 0s; }
@@ -556,8 +489,7 @@ section#news {
         margin-top: 0;
         margin-bottom: 0;
         position: relative;
-        -webkit-transform: translate3d(0px, 0px, 0px);
-                transform: translate3d(0px, 0px, 0px); } }
+        transform: translate3d(0px, 0px, 0px); } }
   #off-canvas .logo {
     float: left;
     margin: 20px 0;
@@ -709,8 +641,7 @@ section#news {
     #off-canvas {
       width: 100%;
       min-height: 100px;
-      -webkit-transform: translate3d(0px, -100px, 0px);
-              transform: translate3d(0px, -100px, 0px);
+      transform: translate3d(0px, -100px, 0px);
       transition: 0.5s all cubic-bezier(0.7, 0, 0.3, 1) 0s; }
       #off-canvas .logo {
         display: block; }
@@ -720,15 +651,12 @@ section#news {
         opacity: 1;
         visibility: visible; } }
   #off-canvas.visible {
-    -webkit-transform: translate3d(30px, 30px, 0px);
-            transform: translate3d(30px, 30px, 0px); }
+    transform: translate3d(30px, 30px, 0px); }
     @media screen and (min-width: 1020px) {
       #off-canvas.visible {
-        -webkit-transform: translate3d(0px, 0px, 0px);
-                transform: translate3d(0px, 0px, 0px); } }
+        transform: translate3d(0px, 0px, 0px); } }
   #off-canvas.visible.active {
-    -webkit-transform: translate3d(0px, 0px, 0px);
-            transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
     height: auto;
     min-height: 100%;
     width: 100%;
@@ -738,8 +666,7 @@ section#news {
     #off-canvas.visible.active .container {
       opacity: 1;
       visibility: visible;
-      -webkit-transform: translate3d(0px, 0px, 0px);
-              transform: translate3d(0px, 0px, 0px);
+      transform: translate3d(0px, 0px, 0px);
       transition: 0.3s all ease 0.5s; }
     @media screen and (min-width: 1020px) {
       #off-canvas.visible.active {
@@ -747,22 +674,18 @@ section#news {
         #off-canvas.visible.active .container {
           transition: 0.3s opacity ease 0s; } }
     #off-canvas.visible.active a.open span:first-child {
-      -webkit-transform: translate3d(0px, 8px, 0px) rotateZ(-45deg);
-              transform: translate3d(0px, 8px, 0px) rotateZ(-45deg); }
+      transform: translate3d(0px, 8px, 0px) rotateZ(-45deg); }
     #off-canvas.visible.active a.open span:nth-child(2) {
-      -webkit-transform: rotateY(90deg);
-              transform: rotateY(90deg);
+      transform: rotateY(90deg);
       opacity: 0; }
     #off-canvas.visible.active a.open span:last-child {
-      -webkit-transform: translate3d(0px, -8px, 0px) rotateZ(45deg);
-              transform: translate3d(0px, -8px, 0px) rotateZ(45deg); }
+      transform: translate3d(0px, -8px, 0px) rotateZ(45deg); }
     #off-canvas.visible.active .container {
       min-height: auto;
       opacity: 1;
       overflow: visible;
       pointer-events: auto;
-      -webkit-transform: translate3d(0px, 0px, 0px);
-              transform: translate3d(0px, 0px, 0px); }
+      transform: translate3d(0px, 0px, 0px); }
 
 header#header {
   display: block;
@@ -955,8 +878,7 @@ header#header {
             width: 100%; }
             header#header .info .button.opening div {
               left: 50%;
-              -webkit-transform: translateX(-50%);
-                      transform: translateX(-50%); } }
+              transform: translateX(-50%); } }
         @media screen and (min-width: 1020px) {
           header#header .info .button.opening:hover div {
             position: absolute;
@@ -999,8 +921,7 @@ header#header {
     color: rgba(255, 255, 255, 0.4);
     display: none; }
     header#header .scroll-arrow i {
-      -webkit-animation: anim-arrow 2s 0s ease infinite;
-              animation: anim-arrow 2s 0s ease infinite;
+      animation: anim-arrow 2s 0s ease infinite;
       position: relative; }
     header#header .scroll-arrow:hover {
       color: rgba(255, 255, 255, 0.7); }
@@ -1218,8 +1139,7 @@ section#events .holder {
   width: 5000%;
   position: relative;
   overflow: hidden;
-  -webkit-transform: translate3d(-98%, 0px, 0px);
-          transform: translate3d(-98%, 0px, 0px); }
+  transform: translate3d(-98%, 0px, 0px); }
 
 section#events .slide {
   display: block;
@@ -1899,23 +1819,18 @@ section#learn {
     margin-left: -45px;
     margin-top: -10px;
     position: absolute;
-    -webkit-animation: anim-books 4s 0s cubic-bezier(0.7, 0, 0.3, 1) infinite;
-            animation: anim-books 4s 0s cubic-bezier(0.7, 0, 0.3, 1) infinite;
+    animation: anim-books 4s 0s cubic-bezier(0.7, 0, 0.3, 1) infinite;
     width: 90px; }
     @media screen and (min-width: 690px) {
       section#learn .book {
         margin-top: 0px; } }
     section#learn .book:nth-child(2) {
       margin-left: -30px;
-      -webkit-transform: translate3d(0px, 26px, 0px);
-              transform: translate3d(0px, 26px, 0px);
-      -webkit-animation: anim-books 4s -0.3s cubic-bezier(0.7, 0, 0.3, 1) infinite;
-              animation: anim-books 4s -0.3s cubic-bezier(0.7, 0, 0.3, 1) infinite; }
+      transform: translate3d(0px, 26px, 0px);
+      animation: anim-books 4s -0.3s cubic-bezier(0.7, 0, 0.3, 1) infinite; }
     section#learn .book:nth-child(3) {
-      -webkit-transform: translate3d(0px, 52px, 0px);
-              transform: translate3d(0px, 52px, 0px);
-      -webkit-animation: anim-books 4s -0.6s cubic-bezier(0.7, 0, 0.3, 1) infinite;
-              animation: anim-books 4s -0.6s cubic-bezier(0.7, 0, 0.3, 1) infinite; }
+      transform: translate3d(0px, 52px, 0px);
+      animation: anim-books 4s -0.6s cubic-bezier(0.7, 0, 0.3, 1) infinite; }
     section#learn .book .omslagrond {
       background: none repeat scroll 0 0 #ddd;
       border-bottom: 3px solid #D32424;
@@ -2014,8 +1929,7 @@ section#learn {
       top: -25px;
       left: -15px;
       border: 3px solid #fff;
-      -webkit-animation: anim-rotate 4s 0s linear infinite;
-              animation: anim-rotate 4s 0s linear infinite;
+      animation: anim-rotate 4s 0s linear infinite;
       transition: 0.4s background ease 0s; }
       section#learn .cameras .roll:after {
         display: block;
@@ -2046,8 +1960,7 @@ section#learn {
         height: 44px;
         top: -22px;
         left: 40px;
-        -webkit-animation: anim-rotate 4s -1s linear infinite;
-                animation: anim-rotate 4s -1s linear infinite;
+        animation: anim-rotate 4s -1s linear infinite;
         border-radius: 22px; }
   section#learn .item {
     float: left;

@@ -123,40 +123,34 @@ p {
       .button.effect:hover, .button.effect:focus {
         outline: medium; }
         .button.effect:hover div, .button.effect:focus div {
-          -webkit-transform: translateY(-100%);
-                  transform: translateY(-100%); } }
+          transform: translateY(-100%); } }
     .button.effect div {
       display: inline-block;
       position: relative;
-      transition: -webkit-transform 0.3s ease 0s;
       transition: transform 0.3s ease 0s; }
       .button.effect div:before {
         content: attr(data-hover);
         position: absolute;
         top: 100%;
         left: 0px;
-        -webkit-transform: translate3d(0px, 0px, 0px);
-                transform: translate3d(0px, 0px, 0px); }
+        transform: translate3d(0px, 0px, 0px); }
   .button.effect-hr {
     overflow: hidden; }
     @media screen and (min-width: 1280px) {
       .button.effect-hr:hover, .button.effect-hr:focus {
         outline: medium; }
         .button.effect-hr:hover div, .button.effect-hr:focus div {
-          -webkit-transform: translateX(-100%);
-                  transform: translateX(-100%); } }
+          transform: translateX(-100%); } }
     .button.effect-hr div {
       display: inline-block;
       position: relative;
-      transition: -webkit-transform 0.3s ease 0s;
       transition: transform 0.3s ease 0s; }
       .button.effect-hr div:before {
         content: attr(data-hover);
         position: absolute;
         top: 0px;
         left: 100%;
-        -webkit-transform: translate3d(0px, 0px, 0px);
-                transform: translate3d(0px, 0px, 0px); }
+        transform: translate3d(0px, 0px, 0px); }
   .button.invert {
     background: #601212; }
   .button.icon {
