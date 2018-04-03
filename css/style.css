@@ -1266,7 +1266,7 @@ section#events a.prev.button, section#events a.next.button {
       position: absolute;
       width: auto;
       margin: -120px 0 0 0;
-      top: 50%;
+      top: 400px;
       height: 240px; } }
   @media screen and (min-width: 1020px) {
     section#events a.prev.button span, section#events a.next.button span {
